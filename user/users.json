@@ -1,0 +1,41 @@
+[
+    {
+        "Id": "01",
+        "Ten": "usernew01",
+        "Tien": 0,
+        "Vip": false,
+        "Email": "qtam@gmail.com",
+        "Sdt": "123456",
+        "Account": {
+            "AccountId": "qtam09",
+            "Password": "$2b$12$QyfLCwHQ.4PzaoYDV9j/bOf5Rev2K0LQGY3diO5EIDluugcjsN/82"
+        },
+        "Role": "001"
+    },
+    {
+        "Id": "02",
+        "Ten": "usernew02",
+        "Tien": 0,
+        "Vip": false,
+        "Email": "pkien@gmail.com",
+        "Sdt": "00001",
+        "Account": {
+            "AccountId": "pkien09",
+            "Password": "$2b$12$.ywBfzvzkIyr65MXfMCSduRZceVtkem.IEeYYt6B3ZVHvtaNj1Ehi"
+        },
+        "Role": "002"
+    },
+    {
+        "Id": "03",
+        "Ten": "usernew03",
+        "Tien": 0,
+        "Vip": false,
+        "Email": "qtam@gmail.com",
+        "Sdt": "0123456789",
+        "Account": {
+            "AccountId": "tyuu123",
+            "Password": "$2b$12$jeefjDlfT5i0f2tFWFE5pO4vea4L2Jqz3k2/oJZSNw5DvRA9GO64W"
+        },
+        "Role": 1
+    }
+]
