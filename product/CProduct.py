@@ -1,13 +1,14 @@
 import json
 
 class Product:
-    def __init__(self, Id, Ten, Gia, SoLuong, Rate, Loai, HinhAnh):
+    def __init__(self, Id, Ten, Gia, SoLuong, Rate, Loai, ThongTin, HinhAnh):
         self.Id = Id
         self.Ten = Ten
         self.Gia = Gia
         self.SoLuong = SoLuong
         self.Rate = Rate
         self.Loai = Loai
+        self.ThongTin = ThongTin
         self.HinhAnh = HinhAnh
     
     def to_dict(self):
@@ -18,18 +19,18 @@ class Product:
             "SoLuong": self.SoLuong,
             "Rate": self.Rate,
             "Loai": self.Loai,
+            "ThongTin": self.ThongTin,
             "HinhAnh": self.HinhAnh
         }
 
 class ProductManager:
     def __init__(self):
         self.products = []
-        self.load_products()
     def load_products(self):
         with open("product/products.json", "r", encoding="utf-8") as file:
             data = json.load(file)
             for item in data:
-                product = Product(item["Id"], item["Ten"], item["Gia"], item["SoLuong"], item["Rate"], item["Loai"], item["HinhAnh"])
+                product = Product(item["Id"], item["Ten"], item["Gia"], item["SoLuong"], item["Rate"], item["Loai"], item["ThongTin"], item['HinhAnh'])
                 self.products.append(product)
     
 
